@@ -1,11 +1,89 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Card from "../components/card.astro";
+import Chip from "../components/chip.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// Put all your links here
+const links: Link[] = [
+  {
+    desc: "Plex", // The text that will be rendered
+    link: "10-0-0-10.nip.io:32400", // The link
+    icon: "fa-solid fa-tv", // An icon from Font Awesome: https://fontawesome.com/search?o=r&m=free
+  },
+  {
+    desc: "Ombi",
+    link: "10-0-0-187.nip.io:3579",
+    icon: "fa-solid fa-magnifying-glass",
+  },
+  {
+    desc: "Sonarr",
+    link: "10-0-0-187.nip.io:8989",
+    icon: "fa-solid fa-solar-panel",
+  },
+  {
+    desc: "Radarr",
+    link: "10-0-0-187.nip.io:7878",
+    icon: "fa-solid fa-satellite-dish",
+  },
+  {
+    desc: "Transmission",
+    link: "10-0-0-187.nip.io:9091",
+    icon: "fa-solid fa-file-arrow-down",
+  },
+  {
+    desc: "NZBGet",
+    link: "10-0-0-187.nip.io:6789",
+    icon: "fa-solid fa-newspaper",
+  },
+
+];
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/x-icon' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name='generator' content={Astro.generator} />
+    <meta name='description' content='
+tvauto.io © 2025.' />
+    <meta name='author' content='Athena' />
+    <meta property='og:title' content='TV Auto' />
+    <meta property='og:image' content='favicon.svg' />
+    <meta property='og:description' content='TV Auto Links' />
+    <meta property='twitter:description' content='TV Auto Links' />
+    <meta property='twitter:title' content='TV Auto' />
+    <meta property='twitter:image' content='favicon.svg' />
+    <title>TV Auto</title>
+    <style>
+      @font-face {
+        font-family: Geist;
+        src: url(/Geist.ttf);
+        font-display: swap;
+      }
+    </style>
+  </head>
+  <body
+    class='bg-[#1e1e1e] flex justify-center items-center w-screen h-screen font-[Geist] text-white'
+  >
+    <main class='w-[80%] flex flex-col gap-8'>
+      <h1 class='md:text-6xl text-4xl font-black text-center'>TV Auto Links</h1>
+      <div class='grid justify-center gap-4'>
+        {
+          links.map(({ desc, link, icon }) => {
+            return <Card {desc} {link} {icon} />;
+          })
+        }
+      </div>
+      <div class='flex justify-center gap-8'>
+        <!-- Put some social links who have a definitive icon here: -->
+        <Chip link='bsky.app' icon='fa-brands fa-bluesky' />
+        <Chip link='x.com' icon='fa-brands fa-x-twitter' />
+        <Chip link='youtube.com' icon='fa-brands fa-youtube' />
+      </div>
+      <p class='text-center mx-auto'>
+        tvauto.io © 2025.
+      </p>
+    </main>
+  </body>
+</html>
