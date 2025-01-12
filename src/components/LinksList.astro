@@ -1,0 +1,13 @@
+---
+import { buildLinks } from "../lib/buildLinks";
+import Card from "./card.astro";
+
+const finalLinks = buildLinks();
+---
+
+<!-- Use a <div> with the same grid classes -->
+<div class="grid justify-center gap-4">
+  {finalLinks.map(({ desc, icon, link }) => (
+    <Card desc={desc} icon={icon} link={link} />
+  ))}
+</div>
