@@ -65,7 +65,8 @@ import Chip from "../components/chip.astro";
 
       <!-- Footer text from .env or fallback -->
       <p class="text-center mx-auto">
-        {site.footerText}
+        Copyright &copy; {new Date().getFullYear()} 
+        <span set:html={site.footerText}></span>
       </p>
     </main>
   </body>
