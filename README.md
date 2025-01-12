@@ -4,7 +4,7 @@
 # TV Auto Linktree
 
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](#license)
-[![Astro v4+](https://img.shields.io/badge/astro-v4%2B-orange.svg)](https://astro.build)
+[![Astro v5+](https://img.shields.io/badge/astro-v5%2B-orange.svg)](https://astro.build)
 [![Tailwind CSS](https://img.shields.io/badge/tailwindcss-3.x-06B6D4.svg)](https://tailwindcss.com)
 
 **A zero-cost, no-database, super-flexible “Linktree-style” page for TV automation— or any link-in-bio use case.**
