@@ -45,7 +45,7 @@ export const site: SiteConfig = {
 
   socialLinks: [
     {
-      link: `x.com/${env.X_HANDLE || ""}`,
+      link: `x.com/${env.X_HANDLE || "X"}`,
       icon: "fa-brands fa-x-twitter",
     },
     {
