@@ -31,6 +31,7 @@
 - **Local apps** (Plex, Sonarr, Radarr, Transmission, etc.) typically can’t run on a free static host because they need databases/storage. But you can point a **static** front-end to your local IPs—**no monthly cost** for the link page itself.
 - Also great as a **general link-in-bio** site for social media.
 - **nip.io** wildcard DNS support for local IPs (e.g., `10.0.0.187` → `10-0-0-187.nip.io`).
+- Simplifies setup by **eliminating the need for a load balancer**—no manual port specification required for each app.
 
 **Live Demo**: [tvauto.io](https://tvauto.io)  
 _(Note: The links won’t work unless your LAN IPs match. This is just a sample for layout/style.)_
