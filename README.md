@@ -42,8 +42,8 @@ _(Note: The links won’t work unless your LAN IPs match. This is just a sample 
 
 ```bash
 # 1. Clone or fork
-git clone https://github.com/YourUser/TVAutoLinktree.git
-cd TVAutoLinktree
+git clone https://github.com/anitguru/tvauto-linktree-template
+cd tvauto-linktree-template
 
 # 2. Install dependencies
 npm install
