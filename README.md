@@ -13,6 +13,18 @@
 
 ---
 
+## Deploy to Your Platform 🚀
+
+Want to deploy your own version of TV Auto Linktree? Use the tools below to get started in minutes:
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a5f290cc-bc5f-48f1-b2d5-bb71b7a91aa3/deploy-status)](https://app.netlify.com/sites/tvautoio/deploys)
+
+Click below to deploy to Netlify instantly:
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/anitguru/tvauto-linktree-template)
+
+---
+
 ## Why Another Linktree?
 
 ### Tired of…
