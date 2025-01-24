@@ -1,14 +1,15 @@
 {
   "name": "linktree",
-  "type": "module",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
+    "compile": "tsc",
+    "generate:netlify-toml": "node lib-dist/lib/generateNetlifyToml.js",
+    "build": "npm run compile && npm run generate:netlify-toml && astro check && astro build",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run generate:netlify-toml && astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "generate:netlify-toml": "ts-node src/lib/generateNetlifyToml.ts"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.3",

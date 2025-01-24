@@ -1,3 +1,16 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  // Extend Astro's strict config:
+  "extends": "astro/tsconfigs/strict",
+
+  "compilerOptions": {
+    // Where compiled JS goes:
+    "outDir": "lib-dist",
+
+    // ESM settings (optional, but typical with Astro):
+    "module": "ESNext",
+    "target": "ES2020"
+  },
+
+  // Make sure your source .ts files are included:
+  "include": ["src"]
 }
