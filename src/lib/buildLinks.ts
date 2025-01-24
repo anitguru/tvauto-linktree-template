@@ -1,9 +1,9 @@
 // src/lib/buildLinks.ts
 
-import { ipToDash } from "./utils";
+import { ipToDash } from "./utils.ts";
 // Import the type separately from the actual data
-import type { LinkData } from "../data/links";
-import { links } from "../data/links";
+import type { LinkData } from "../data/links.ts";
+import { links } from "../data/links.ts";
 
 /**
  * The final link object that we'll hand off to the UI.
