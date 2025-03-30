@@ -18,42 +18,42 @@ export const links: LinkData[] = [
   },
   {
     desc: "Transmission",
-    port: 9091,
+    port: "/transmission",
     icon: "fa-solid fa-file-arrow-down",
   },
   {
     desc: "NZBGet",
-    port: 6789,
+    port: "/nzbget",
     icon: "fa-solid fa-newspaper",
   },
   {
     desc: "Ombi",
-    port: 3579,
+    port: "/ombi",
     icon: "fa-solid fa-magnifying-glass",
   },
   {
     desc: "Sonarr",
-    port: 8989,
+    port: "/sonarr",
     icon: "fa-solid fa-solar-panel",
   },
   {
     desc: "Radarr",
-    port: 7878,
+    port: "/radarr",
     icon: "fa-solid fa-satellite-dish",
   },
   {
     desc: "Hydra 2",
-    port: 5076,
+    port: "/hydra",
     icon: "fa-solid fa-dragon",
   },
   {
     desc: "Jackett",
-    port: 9117,
+    port: "/jackett",
     icon: "fa-solid fa-shirt",
   },
   {
     desc: "Tautulli",
-    port: 8181,
+    port: "/tautulli",
     icon: "fa-solid fa-chart-simple",
   },
 ];
