@@ -39,7 +39,7 @@ export function buildLinks(): FinalLink[] {
     return {
       desc: item.desc,
       icon: item.icon,
-      link: `${appsDashed}.nip.io:${item.port}`,
+      link: `${item.desc}.${appsDashed}.nip.io:${item.port}`,
     };
   });
 }
