@@ -38,7 +38,7 @@ export const links: LinkData[] = [
   },
   {
     desc: "Radarr",
-    port: 7878,
+    port: 8310,
     icon: "fa-solid fa-satellite-dish",
   },
   {
