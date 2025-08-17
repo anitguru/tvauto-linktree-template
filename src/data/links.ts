@@ -22,8 +22,8 @@ export const links: LinkData[] = [
     icon: "fa-solid fa-file-arrow-down",
   },
   {
-    desc: "NZBGet",
-    port: 6789,
+    desc: "SABnzbd",
+    port: 8080,
     icon: "fa-solid fa-newspaper",
   },
   {
