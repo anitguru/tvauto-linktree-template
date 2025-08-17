@@ -27,8 +27,8 @@ export const links: LinkData[] = [
     icon: "fa-solid fa-newspaper",
   },
   {
-    desc: "Ombi",
-    port: 3579,
+    desc: "Overseerr",
+    port: 5055,
     icon: "fa-solid fa-magnifying-glass",
   },
   {
