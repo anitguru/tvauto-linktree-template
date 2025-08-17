@@ -17,7 +17,7 @@ export const links: LinkData[] = [
     icon: "fa-solid fa-play",
   },
   {
-    desc: "Download Station",
+    desc: "DownloadStation",
     port: 8000,
     icon: "fa-solid fa-file-arrow-down",
   },
