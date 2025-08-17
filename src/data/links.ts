@@ -42,9 +42,9 @@ export const links: LinkData[] = [
     icon: "fa-solid fa-satellite-dish",
   },
   {
-    desc: "Hydra",
-    port: 5076,
-    icon: "fa-solid fa-dragon",
+    desc: "Prowler",
+    port: 9696,
+    icon: "fa-solid fa-cat",
   },
   {
     desc: "Jackett",
