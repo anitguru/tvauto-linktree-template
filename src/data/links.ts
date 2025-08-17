@@ -11,11 +11,11 @@ export const links: LinkData[] = [
     port: 32400,
     icon: "fa-solid fa-tv",
   },
-  {
-    desc: "Emby",
-    port: 8096,
-    icon: "fa-solid fa-play",
-  },
+//  {
+//    desc: "Emby",
+//    port: 8096,
+//    icon: "fa-solid fa-play",
+//  },
   {
     desc: "DownloadStation",
     port: 8000,
@@ -46,14 +46,14 @@ export const links: LinkData[] = [
     port: 9696,
     icon: "fa-solid fa-cat",
   },
-  {
-    desc: "Jackett",
-    port: 9117,
-    icon: "fa-solid fa-shirt",
-  },
-  {
-    desc: "Tautulli",
-    port: 8181,
-    icon: "fa-solid fa-chart-simple",
-  },
+//  {
+//    desc: "Jackett",
+//    port: 9117,
+//    icon: "fa-solid fa-shirt",
+//  },
+//  {
+//    desc: "Tautulli",
+//    port: 8181,
+//    icon: "fa-solid fa-chart-simple",
+//  },
 ];
