@@ -51,9 +51,9 @@ export const links: LinkData[] = [
 //    port: 9117,
 //    icon: "fa-solid fa-shirt",
 //  },
-//  {
-//    desc: "Tautulli",
-//    port: 8181,
-//    icon: "fa-solid fa-chart-simple",
-//  },
+  {
+    desc: "Tautulli",
+    port: 8181,
+    icon: "fa-solid fa-chart-simple",
+  },
 ];
