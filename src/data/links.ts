@@ -22,6 +22,11 @@ export const links: LinkData[] = [
     icon: "fa-solid fa-closed-captioning",
   },
   {
+    desc: "Profilarr",
+    port: 6868,
+    icon: "fa-solid fa-ranking-star",
+  },
+  {
     desc: "DownloadStation",
     port: 8000,
     icon: "fa-solid fa-file-arrow-down",
