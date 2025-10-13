@@ -11,11 +11,11 @@ export const links: LinkData[] = [
     port: 32400,
     icon: "fa-solid fa-tv",
   },
-//  {
-//    desc: "Emby",
-//    port: 8096,
-//    icon: "fa-solid fa-play",
-//  },
+  {
+    desc: "Emby",
+    port: 8096,
+    icon: "fa-solid fa-play",
+  },
   {
     desc: "Bazarr",
     port: 6767,
