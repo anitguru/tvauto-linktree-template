@@ -29,7 +29,7 @@ export function buildLinks(): FinalLink[] {
   const playerDashed = ipToDash(playerIp);
 
   return links.map((item: LinkData) => {
-    if (item.desc === "Plex" || item.desc === "Emby") {
+    if (item.desc === "Plex") {
       return {
         desc: item.desc,
         icon: item.icon,
