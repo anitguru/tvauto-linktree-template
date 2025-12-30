@@ -18,42 +18,42 @@ export const links: LinkData[] = [
   },
   {
     desc: "Bazarr",
-    port: 443,
+    port: 80,
     icon: "fa-solid fa-closed-captioning",
   },
   {
     desc: "Profilarr",
-    port: 6868,
+    port: 80,
     icon: "fa-solid fa-ranking-star",
   },
   {
     desc: "DownloadStation",
-    port: 8000,
+    port: 80,
     icon: "fa-solid fa-file-arrow-down",
   },
   {
     desc: "SABnzbd",
-    port: 8080,
+    port: 80,
     icon: "fa-solid fa-newspaper",
   },
   {
     desc: "Overseerr",
-    port: 5055,
+    port: 80,
     icon: "fa-solid fa-magnifying-glass",
   },
   {
     desc: "Sonarr",
-    port: 8989,
+    port: 80,
     icon: "fa-solid fa-solar-panel",
   },
   {
     desc: "Radarr",
-    port: 8310,
+    port: 80,
     icon: "fa-solid fa-satellite-dish",
   },
   {
     desc: "Prowlarr",
-    port: 9696,
+    port: 80,
     icon: "fa-solid fa-cat",
   },
 //  {
@@ -63,7 +63,7 @@ export const links: LinkData[] = [
 //  },
   {
     desc: "Tautulli",
-    port: 8181,
+    port: 80,
     icon: "fa-solid fa-chart-simple",
   },
 ];
