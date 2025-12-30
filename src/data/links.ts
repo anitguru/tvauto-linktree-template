@@ -18,7 +18,7 @@ export const links: LinkData[] = [
   },
   {
     desc: "Bazarr",
-    port: 6767,
+    port: 443,
     icon: "fa-solid fa-closed-captioning",
   },
   {
