@@ -13,7 +13,7 @@ export const links: LinkData[] = [
   },
   {
     desc: "Emby",
-    port: 8096,
+    port: 80,
     icon: "fa-solid fa-play",
   },
   {
