@@ -1,0 +1,73 @@
+---
+import { site } from "../data/site";
+import LinksList from "../components/LinksList.astro";
+import Chip from "../components/chip.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href={site.favicon} />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Font Awesome 6.7.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Meta tags from site config / .env -->
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={site.description} />
+    <meta name="author" content={site.author} />
+
+    <meta property="og:title" content={site.ogTitle} />
+    <meta property="og:image" content={site.ogImage} />
+    <meta property="og:description" content={site.ogDescription} />
+
+    <meta
+      property="twitter:description"
+      content={site.twitterDescription}
+    />
+    <meta property="twitter:title" content={site.twitterTitle} />
+    <meta property="twitter:image" content={site.twitterImage} />
+
+    <title>{site.pageTitle}</title>
+
+    <style>
+      @font-face {
+        font-family: Geist;
+        src: url(/Geist.ttf);
+        font-display: swap;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#1e1e1e] w-screen h-screen overflow-y-auto font-[Geist] text-white">
+    <main class="max-w-xl mx-auto flex flex-col gap-8 py-8">
+      <!-- H1 from env / fallback -->
+      <h1 class="md:text-6xl text-4xl font-black text-center">
+        {site.heading}
+      </h1>
+
+      <!-- The decoupled links list -->
+      <LinksList />
+
+      <!-- Dynamic social links from .env-based site config -->
+      <div class="flex justify-center gap-8">
+        {site.socialLinks.map(({ link, icon }) => (
+          <Chip link={link} icon={icon} />
+        ))}
+      </div>
+
+      <!-- Footer text from .env or fallback -->
+      <p class="text-center mx-auto">
+        Copyright &copy; {new Date().getFullYear()} 
+        <span set:html={site.footerText}></span>
+      </p>
+    </main>
+  </body>
+</html>

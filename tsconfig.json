@@ -1,0 +1,17 @@
+// tsconfig.json
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    // For Node ESM usage:
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2020",
+
+    // So we can import .ts files by name:
+    "allowImportingTsExtensions": true
+
+    // Astro's strict config usually sets "noEmit": true, which is fine
+    // since we're not generating .js files on disk.
+  },
+  "include": ["src"]
+}

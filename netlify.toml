@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://plex.tvauto.io/*"
+  to = "https://app.plex.tv/:splat"
+  status = 301
+  force = true
